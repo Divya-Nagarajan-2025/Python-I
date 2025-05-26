@@ -1,0 +1,11 @@
+
+#### While loop learning
+
+count=10
+while True:
+  if count<=0:
+   print("blasts")
+   break;
+  else:
+   print(count)
+   count=count-1

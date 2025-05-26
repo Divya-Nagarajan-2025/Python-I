@@ -1,0 +1,11 @@
+###While loop learning: Password 
+
+correct_password = "python123"
+
+password=input("Enter the password ")
+
+while password!=correct_password:
+ print("denied access")
+ password=input("Enter the password ")
+ 
+print("access granted")

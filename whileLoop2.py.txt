@@ -1,0 +1,14 @@
+###Ask the user to enter numbers one by one, and count how many even numbers they enter. Stop asking when the user types -1.
+
+even=0
+
+while True:
+ number=int(input("Enter the number one by one: \n>"))
+ if number%2==0:
+  print("The given number is a even number")
+  even +=1
+ elseif number==-1:
+  break
+
+print("The number of even numbers are: ", even)
+ 
