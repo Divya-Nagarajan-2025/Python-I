@@ -1,0 +1,64 @@
+####dictionary example
+
+'''
+dict_a = {1:'a',2:2,3:'c',4:0.5,5:10}
+print(f"3rdkey value is: ",dict_a[4])
+print(5 in dict_a)
+print(1 not in dict_a)
+
+
+#### keys(), values(), items()
+dict_a = {"Queen" : "Bohemian Rhapsody", 
+          "Bee Gees" : "Stayin Alive", 
+	  "U2" : "one", 
+          "Michael Jackson" : "Billie Jean",
+	  "The Beatless" : "Hey Jude",
+	  "Bb Dylan": "Like a Rollng Stone"}
+
+print(len(dict_a))
+
+for keys in dict_a.keys():
+    print(keys + "\n")
+
+for values in dict_a.values():
+    print(values)
+
+for keys,valuses in dict_a.items():
+    print(keys,values)
+
+print(dict_a.get("Promise of the Real", "It is not found"))
+
+
+###fromkeys(), pop(), popitem9()
+
+dict_a = {}.fromkeys("bcdy","consonants")
+print(dict_a.items())
+
+for keys,values in dict_a.items():
+    print(keys,values + "\n")
+
+fast_food_items = {"McDonalds" : "Big Msc",
+	  	   "Burger King" : "Whopper",
+		   "Chick-fill-A": "Original chicken sandwich"}
+
+use_pop = fast_food_items.pop("McDonalds")
+print(use_pop)
+fast_food_items.popitem()
+print(fast_food_items)
+
+'''
+
+### dict methods .clear(), .copy(), .update()
+
+internet_celebrities = {"DrDisrespect" : "YouTube", "Zlaner" : "Facebook", "Ninja" :"Mixer"}
+another_one = {"Shroud" : "Twitch"}
+
+internet_celebrities.update(another_one)
+
+copy_var = internet_celebrities.copy()
+internet_celebrities.clear()
+print(internet_celebrities)
+print(copy_var)
+
+
+	  	
