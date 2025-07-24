@@ -1,4 +1,5 @@
-######"Personal Dictionary App"
+#####"Personal Dictionary App"
+##### Day 1 of trying mini projects suggested by chatGpt,here a dictionary has been alreay created where user canadd, update, serach and delete items.
 
 myDict= { "bonjour":"hello", "merci":"thank you", "oui":"yes", "non":"no" }
 
@@ -7,35 +8,32 @@ while True:
 
     getChoice=int(input("1. Add\n 2. Update word\n 3. Delete word\n 4. Search word\n 5. Exit\n Enter a number ofyour choice: "))
 
-    if getChoice == 5:
-       print("You have opted to exit")
-       break
+       if getChoice == 5:
+          print("You have opted to exit")
+          break
 
-    elif getChoice == 1:
+       elif getChoice == 1:
+          getWord = input("enter the word that has to be added")
+          getMeaning = input("Enter the meaning that has to be added")
+          myDict[getWord] = getMeaning
+          print(myDict)
   
-       getWord = input("enter the word that has to be added")
-       getMeaning = input("Enter the meaning that has to be added")
-       myDict[getWord] = getMeaning
-       print(myDict)
-  
-    elif getChoice == 2:
-       
-       getWord = input("Enter a word that has to be updated")
-       getMeaning = input("Enter the meaning that has to be added")
-       myDict.update({"getword":"getMeaning"})
-       print(myDict)
+       elif getChoice == 2:
+          getWord = input("Enter a word that has to be updated")
+          getMeaning = input("Enter the meaning that has to be added")
+          myDict.update({"getword":"getMeaning"})
+          print(myDict)
 
-    elif getChoice == 3:
- 
-       getWord = input("Enter a word that has to be deleted")
-       myDict.pop(getWord)
-       print(myDict)
+       elif getChoice == 3:
+          getWord = input("Enter a word that has to be deleted")
+          myDict.pop(getWord)
+          print(myDict)
 
-    elif getChoice == 4:
-       getWord = input("Enter a word that meaning has to be displayed")
-       if getWord in myDict:
-          print(myDict.get(getWord))
-       else:
-           print("None")
+       elif getChoice == 4:
+          getWord = input("Enter a word that meaning has to be displayed")
+             if getWord in myDict:
+                print(myDict.get(getWord))
+             else:
+                print("None")
 
  
