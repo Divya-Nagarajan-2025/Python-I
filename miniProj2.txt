@@ -1,0 +1,25 @@
+####displaying the count of words in a sentence or paragraph provided by the user, and counting its frequency
+
+getInput = input("Enter a sentence or paragraph ").lower()
+
+getInput = getInput.replace('.', '')
+getInput = getInput.replace(',', '')
+getInput = getInput.replace('!', '')
+getInput = getInput.replace('?', '')
+getInput = getInput.replace("'", '')
+getInput = getInput.replace('"', '')
+
+splitWords = getInput.split()
+print(f"Total number of words",len(splitWords))
+
+createDict = {}
+
+for word in splitWords:
+   if word in createDict:
+      createDict[word]+=1
+   else:  
+       createDict[word]=1
+
+print("Words with its frequency: ", createDict)
+
+
