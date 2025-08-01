@@ -1,3 +1,5 @@
+###Simple calculator program
+
 while True:
    choice= input("Enter the operation that has to be performed (add/sub/mul/div/exit) ")
        if choice.lower() == "exit":
